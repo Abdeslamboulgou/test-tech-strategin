@@ -1,11 +1,14 @@
-import React from 'react';
-import Header
- from '../components/Header';
-const Users = () => {
+import React, { useState } from 'react';
+import Header from '../components/Header';
+import UsersList from '../components/UsersList';
+
+const Users = (props) => {
+    const [usersList, setUsersList] = useState([])
+    
     return (
         <div>
              <Header/>
-            users
+             <UsersList usersList={usersList}/>
         </div>
     );
 };

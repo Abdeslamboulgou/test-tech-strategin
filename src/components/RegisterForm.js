@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import '../styles/registerForm.css';
+
 
 const RegisterForm = () => {
 
@@ -7,9 +9,11 @@ const RegisterForm = () => {
     
     return (
         <div>
+            <h3>Sign up</h3>
             <form className='register-form'>
+                
              <div className='email-account'>
-                <label>Invalid Email</label>
+                <label id='email'>Email</label>
                 <input
                  type="mail"
                  required
@@ -19,6 +23,7 @@ const RegisterForm = () => {
                  />
              </div>
               <div className='password-account'>
+              <label id='password'>Mot de passe</label>
                <input
                type="password"
                required
@@ -27,8 +32,10 @@ const RegisterForm = () => {
                value={password}
                />
                </div>
+
+               <button className='inscription-button'>Inscription</button>
             </form>
-            <button>Inscription</button>
+            
         </div>
     );
 };

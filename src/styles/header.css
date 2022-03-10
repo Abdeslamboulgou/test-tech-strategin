@@ -2,10 +2,10 @@
     text-align: right;
     padding: 10px;
     display: flex;
-	justify-content: flex-end;
+	justify-content: space-around;
 	flex-direction: row-reverse;
 	align-items: center;
-    background: linear-gradient(to right bottom, rgb(65, 64, 64) , rgb(34, 34, 34));
+    background: linear-gradient(to right bottom, rgb(255, 255, 255) , rgb(247, 242, 242));
     box-shadow: 1px 2px 6px rgb(97, 96, 96);
 
 
@@ -49,7 +49,7 @@
 }
 .active-nav{
     text-decoration: none;
-    color: rgb(255, 203, 107);
+    color: rgb(0, 0, 0);
 }
 .nav_bar  Link{
     text-decoration: none;
@@ -57,25 +57,8 @@
 .banner:hover{
          animation-play-state: paused;}
 .logo{
-    width: 90px;
+    width: 180px;
     height: 70px;
-    animation-name: bann;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-.title{
-    color: rgb(190, 248, 190);
-    padding-left: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
-}
-@keyframes bann {
-    0%{
-        transform: rotateZ(0deg)
-    }
-    100%{
-        transform: rotateZ(180deg);
-    }
 
 }
+
